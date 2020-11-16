@@ -1,5 +1,3 @@
-console.log("Web server is also connected with javascript");
-
 const weatherForm = document.querySelector('form');
 const search = document.querySelector('input');
 messageOne = document.querySelector('#message-1');
