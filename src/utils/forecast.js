@@ -16,7 +16,7 @@ const getforecast = (latitude, longitude, callBack) => {
                 precipitation: response.body.current.precip,
                 description: response.body.current.weather_descriptions[0],
                 location: response.body.location.name + ', ' + response.body.location.region + ', ' + response.body.location.country,
-                message: `${response.body.current.weather_descriptions[0]}. It is currently ${response.body.current.temperature} °C out. It feels like ${response.body.current.feelslike} °C`,
+                message: `${response.body.current.weather_descriptions[0]}. It is currently ${response.body.current.temperature} °C out. It feels like ${response.body.current.feelslike} °C. Relative humidity is ${response.body.current.humidity}%`,
             });
         }
     });
